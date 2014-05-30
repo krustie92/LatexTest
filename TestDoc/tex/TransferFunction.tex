@@ -1,0 +1,20 @@
+\newpage
+\chapter{Function by Theory}
+The transfer function of the system can be achieved by using block diagram manipulation and reduction. The canonical block can be used to obtain the transfer function between input voltage, V and current, I:
+
+
+
+\[\frac{\frac{1}{s}\frac{1}{L}}{1+\frac{1}{s}\frac{1}{L}}\ = \frac{1}{sl+R}\]
+
+
+
+The transfer function for across the gain of the motor X/I is: 
+\[\frac{X}{l}=Km\]
+
+There are is an inertia, J1, and a damping, B1, due to the motor dynamics. There is also an inertia, J2, and damping, B2, due to the blade dynamics. These blade dynamics are reflected across a gearbox. They must be scale accordingly.
+
+\[J=J_1+\frac{J_2}{N_2}\]
+
+\[B=B_1+\frac{B_2}{N_2}\]
+The canonical reduction is used as above, for V and I, for the transfer function between X and speed of motor Ω:
+\[\frac{\Omega}{X}=\frac{\frac{1}{J}\frac{1}{s}}{1+\frac{1}{J}\frac{1}{s}B}\]

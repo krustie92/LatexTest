@@ -1,0 +1,11 @@
+\newpage
+\chapter{Loop Response}
+\section{Open Loop Response to Changes in Motor Voltage}
+The system was subjected to a step change in the Motor Voltage from 0V to 1V at 5 second. There is a current spike of roughly 4.2A. This is known as the ‘inrush current’. The speed, ω reaches a steady state. By the time this steady state speed has been reached the current will have decayed to approximately zero. As there was no load torque applied to system there is no current drawn once motor gets to the set speed. As a result the response the blade pitch is second order. It appears therefore that the pitch response to a step in input voltage can be approximate as a ramp.
+
+
+\section{Open Loop Response to Changes in Disturbance Torque}
+The system was subjected to a step change in the Motor Voltage from 0V to 50V at 1 second. The increased load torque draws more current. As a result the machine must slow down to provide the required current due to the back emf. Again it appears therefore that the pitch response to a step in torque, as with the input voltage, can be approximate as a ramp. However, this time the slope will be negative.
+
+\subsection{Open Loop Response to Changes in Motor Voltage and Disturbance Torque}
+In this simulation both the motor voltage and torque were stepped at the same time by different amounts. The torque has a quicker effect the response as the speed goes slightly negative. However, the voltage dynamics quickly dominate and lift the speed positive again. The voltage step leads to an inrush current as before, which manifests itself as a spike in the plot. But this time the presence of a constant load means there is also a constant current drawn. This current is seen as the inrush current decays away.
